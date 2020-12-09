@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" rowspan="2" id="black-space"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td id="grey-btn" onclick="operation('+')">+</td>
+            <td id="grey-btn" onclick="operation('-')">-</td>
+            <td id="grey-btn" onclick="operation('*')">X</td>
+            <td id="grey-btn" onclick="operation('/')">/</td>
+        </tr>
+        <tr>
+            <td id="white-btn" onclick="addNum(7)">7</td>
+            <td id="white-btn" onclick="addNum(8)">8</td>
+            <td id="white-btn" onclick="addNum(9)">9</td>
+            <td id="equal-btn" rowspan="4" onclick="equal()">=</td>
+        </tr>
+        <tr>
+            <td id="white-btn" onclick="addNum(4)">4</td>
+            <td id="white-btn" onclick="addNum(5)">5</td>
+            <td id="white-btn" onclick="addNum(6)">6</td>
+        </tr>
+        <tr>
+            <td id="white-btn" onclick="addNum(1)">1</td>
+            <td id="white-btn" onclick="addNum(2)">2</td>
+            <td id="white-btn" onclick="addNum(3)">3</td>
+        </tr>
+        <tr>
+            <td id="white-btn" onclick="addNum(0)">0</td>
+            <td id="white-btn" colspan="2" onclick="klear()">C</td>
+        </tr>
+    </table>
+
+    <script src="js.js"></script>
+</body>
+</html>
